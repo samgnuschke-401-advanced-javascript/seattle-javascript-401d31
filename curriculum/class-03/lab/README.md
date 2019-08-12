@@ -27,14 +27,19 @@ In the `data` folder, there is a file called `person.json` which is a simple obj
 
 ### Execution notes
 
-Perform each implementation below in a seaparate module that you can test and also require/run from the index.js file
-
 1. Perform the above operations with standard node `fs` module callbacks
 1. Re-Implement using promises
 1. Re-Implement using async/await
 
+For each of the above implementations, create a separate module that you can test and also require/run from the index.js file.
+
+For write operations, your modules should accept an object and convert it to a save-able buffer.
+
+For read operations, your modules should read in the text file and convert it's contents to an object before returning.
+
+
 #### Testing
-* valid input params from the cli
+* test your modules, not your cli app!
 * handle errors (i.e. file not found) in a consistent way
 * Use the mocked `fs` module
 * Handle async issues in your tests

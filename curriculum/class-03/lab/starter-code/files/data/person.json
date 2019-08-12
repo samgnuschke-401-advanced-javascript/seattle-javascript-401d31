@@ -1,11 +1,1 @@
-{
-  "firstName": "Fred",
-  "lastName": "Sample",
-  "hair": {
-    "type": "wavy",
-    "color": "brown"
-  },
-  "favoriteFoods": ["pizza","cupcakes","salmon"],
-  "married": true,
-  "kids": 3
-}
+{"firstName":"Edward","lastName":"Scissorhands","hair":{"type":"wavy","color":"brown"},"favoriteFoods":["pizza","cupcakes","children"],"married":false,"kids":0}

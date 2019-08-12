@@ -33,6 +33,7 @@ Things we want to be able to validate
 * Is the entity itself the right type (array, object, function etc)
 * All all "required" properties present and do they have values?
 * For any property that specifies a type, does the value match that type?
+  * i.e. an array of only numbers
 
 Question: Do you want to export the class and have to make a new instance after you import it, or do you want to export an instance of that class (we call this a singleton). What are the pros and cons to each choice?
 

@@ -26,10 +26,15 @@ exports.read = (file) => read(file)
  * @param file - Filesystem Path to the file to write
  * @param text - Can be straight text or an Object
  */
-exports.write = (file, text) => {
-  let contents = Buffer.from( typeof text === 'object' ? JSON.stringify(text) : text );
-  return write(file, contents )
-    .then( success => success )
-    .catch(err => {throw err;});
+exports.write = (file, content) => {
+  try {
+    let obj = typeof (content) === 'object' ? content : JSON.parse(content);
+    let buffer = Buffer.from(JSON.stringify(obj));
+    return write(file, buffer)
+      .then(success => success)
+      .catch(err => {
+        throw err;
+      });
+  } catch(e) { return Promise.reject('Invalid Object'); }
 };
 

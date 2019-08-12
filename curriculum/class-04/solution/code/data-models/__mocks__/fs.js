@@ -2,7 +2,7 @@
 
 module.exports = exports = {};
 
-var fileContents = '';
+let fileContents = '';
 
 exports.readFile = (file, cb) => {
   if (file.match(/bad/i)) {
