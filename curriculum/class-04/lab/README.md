@@ -1,14 +1,7 @@
 # LAB: Data Modeling
 
-## Before you begin
-* Create a new git repository for this lab
-* Copy the starter-code contents into it
-* You'll need to initialize this lab folder as a new node module, install your dependencies, setup your npm script commands, and pull in your config files
-
 ## Getting Started
 Refer to *Getting Started* in the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for complete setup instructions
-
----
 
 ## Requirements
 

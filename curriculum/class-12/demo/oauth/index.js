@@ -12,8 +12,8 @@ app.use(express.json());
 let port = 3000;
 const googleTokenServerUrl = 'https://www.googleapis.com/oauth2/v4/token';
 const googlePlusAPI = 'https://www.googleapis.com/plus/v1/people/me/openIdConnect';
-const GOOGLE_CLIENT_ID = '560654039720-thgq1sm2bu3j3ce0indjlg91q3p3ps3b.apps.googleusercontent.com';
-const GOOGLE_CLIENT_SECRET = 'RC3khc0IhdNTzeUa76eSGIBe';
+const GOOGLE_CLIENT_ID = '';
+const GOOGLE_CLIENT_SECRET = '';
 const API_SERVER = 'http://localhost:3000/oauth';
 
 // Routes
