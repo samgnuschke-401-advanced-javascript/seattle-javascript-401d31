@@ -16,6 +16,11 @@ class List {
     this.data = data;
   }
 
+  /***
+   * This method allows you to add a new element at the end of the list
+   * @param item - The new item to be added
+   * @returns {number} - The new length of the list
+   */
   push(item) {
     if ( arguments.length === 1 ) {
       this.data[this.length++] = item;
@@ -73,6 +78,12 @@ class List {
     return result;
   }
 
+  /***
+   * This function well evaluate a single value from the entire collection
+   * @param callback {function} - the function to evaluate each element of the list
+   * @param state {any} - the initial value to start from
+   * @returns {any} - the final state after the callback completes
+   */
   reduce(callback, state) {
     if ( ! this.length ) { return undefined; }
     for (let i = 0; i <= this.length - 1; i++) {

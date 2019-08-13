@@ -1,13 +1,12 @@
 # LAB: Classes, Inheritance, Functional Programming
 
-// Test
 
 ## Before you begin
 Refer to *Getting Started* in the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for complete setup instructions
 
 ## Requirements
 
-### Part 1: Vehicles
+### Part 1: Vehicles (Not Required)
 **Starter Code:** `starter-code/classes`
 
 * Implement both `Car` and `Motorcycle` using a Javascript `Class` (in the `vehicle-class.js` file)
@@ -18,7 +17,7 @@ Refer to *Getting Started* in the [lab submission instructions](../../../referen
 
 ---
 
-### Part 2: Draw UML and write docs for the List Module
+### Part 2: Draw UML and write docs for the List Module (Not Required)
 **Starter Code:** `starter-code/list`
  
 ---
