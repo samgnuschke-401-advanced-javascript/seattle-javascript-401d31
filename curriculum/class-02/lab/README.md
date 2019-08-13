@@ -8,6 +8,7 @@ Refer to *Getting Started* in the [lab submission instructions](../../../referen
 ## Requirements
 
 ### Part 1: Vehicles
+<!-- NOT REQUIRED (DO IF YOU HAVE TIME) -->
 **Starter Code:** `starter-code/classes`
 
 * Implement both `Car` and `Motorcycle` using a Javascript `Class` (in the `vehicle-class.js` file)
@@ -19,6 +20,7 @@ Refer to *Getting Started* in the [lab submission instructions](../../../referen
 ---
 
 ### Part 2: Draw UML and write docs for the List Module
+<!-- NOT REQUIRED (DO IF YOU HAVE TIME) -->
 **Starter Code:** `starter-code/list`
  
 ---
