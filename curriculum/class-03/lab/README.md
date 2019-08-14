@@ -29,7 +29,6 @@ In the `data` folder, there is a file called `person.json` which is a simple obj
 
 1. Perform the above operations with standard node `fs` module callbacks
 1. Re-Implement using promises
-1. Re-Implement using async/await
 
 For each of the above implementations, create a separate module that you can test and also require/run from the index.js file.
 
