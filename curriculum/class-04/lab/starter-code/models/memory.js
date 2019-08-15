@@ -31,10 +31,14 @@ class Model {
     return Promise.resolve();
   }
 
+	// Vinicio - this would be our 'isValid', but it changes the data if it finds anything wrong
   sanitize(entry) {
 
     let valid = true;
     let record = {};
+		// Vinicio - this code is checking that properties are present in objects
+		// Vinicio - your goal is to change that to check for types as well
+		// Please take inspiration from lab 02
 
     Object.keys(this.schema).forEach(field => {
       if (this.schema[field].required) {
