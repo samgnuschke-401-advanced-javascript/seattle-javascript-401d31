@@ -11,16 +11,17 @@ const players = mongoose.Schema({
 });
 
 players.post('findOne', function (doc) {
-  doc.name = doc.name.toUpperCase();
+ // doc.name = doc.name.toUpperCase();
+		//console.log('---- after findOne ----');
 });
 
 players.post('init', function () {
   // this.name = this.name.toUpperCase(); // <- this will break our tests (that's a good thing)
-  console.log(this);
+  //console.log(this);
 });
 
 players.post('save', function () {
-  console.log('saving', this);
+  //console.log('saving', this);
 });
 
 module.exports = mongoose.model('players', players);

@@ -35,6 +35,7 @@ Refer to *Getting Started* in the [lab submission instructions](../../../referen
 
 
 ## Assignment 2: Unified/Combined Models
+# Vinicio - here you are trying to make a new class that you can extend from ANY model
 As you may have noticed, your 2 model interfaces in the previous assignment are 99% the same (not very DRY).  In this assignment, we're going to create a common "mongo" interface, not unlike what we did for the memory and file models.
 
 The goal is to create a single interface, that any mongo based model can simply extend from and get all of the same functionality, with the only difference being their schema definition.

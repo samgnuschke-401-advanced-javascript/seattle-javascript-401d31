@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 const Players = require('./models/players-model');
 
-const MONGOOSE_URI = 'mongodb://localhost:27017/class05';
+const MONGOOSE_URI = 'mongodb://localhost/class05';
 
 mongoose.connect(MONGOOSE_URI, { useNewUrlParser: true });
 
