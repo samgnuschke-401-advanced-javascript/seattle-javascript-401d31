@@ -21,7 +21,8 @@ describe('Players Model', () => {
         return players.get(record._id)
           .then(player => {
             Object.keys(obj).forEach(key => {
-              expect(player[0][key]).toEqual(obj[key]);
+              console.log(player);
+              expect(player[key]).toEqual(obj[key]);
             });
           });
       });
