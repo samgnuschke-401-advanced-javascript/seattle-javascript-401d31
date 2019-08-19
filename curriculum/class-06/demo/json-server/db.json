@@ -1,4 +1,17 @@
 {
-  "categories": [],
-  "products": []
+  "categories": [
+    {
+      "_id": 1,
+      "name": "Books",
+      "display_name": "Books",
+      "description": "these are books"
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "name": "The Wolves of the Calla",
+      "author": "Stephen King"
+    }
+  ]
 }

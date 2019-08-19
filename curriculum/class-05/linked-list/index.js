@@ -11,8 +11,8 @@ linkedList.insertAtHead(20);
 linkedList.insertAtHead(30);
 
 
-linkedList.traverse();
+//linkedList.traverse();
 
-
+linkedList.traverseRecursively();
 
 
