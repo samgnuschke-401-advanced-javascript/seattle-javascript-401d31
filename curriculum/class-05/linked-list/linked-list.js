@@ -26,6 +26,18 @@ class LinkedList {
      current = current.next;
    }
   }
+
+  traverseRecursively(current = this.head) {
+    // Base Case
+    if(current === null) {
+      return;
+    }
+    // Recursive
+    this.traverseRecursively(current.next);
+    // Vinicio - the entire recursive process needs to finish befoce
+    // I execute this
+    console.log(current.value);
+  }
 }
 
 module.exports = LinkedList;
