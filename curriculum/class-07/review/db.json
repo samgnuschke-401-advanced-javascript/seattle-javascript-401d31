@@ -1,0 +1,18 @@
+{
+  "things": [
+    {
+      "id": 1,
+      "name": "My Favorite thing"
+    },
+    {
+      "id": 2,
+      "name": "My second favorite thing"
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "name": "Favorites"
+    }
+  ]
+}
