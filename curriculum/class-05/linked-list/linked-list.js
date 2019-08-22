@@ -19,12 +19,11 @@ class LinkedList {
   }
 
   traverse() {
-   let current = this.head;
-   while(current !== null) {
-     console.log(current.value);
-     // SOMETHING ELSE n_n
-     current = current.next;
-   }
+		let current = this.head;
+		while(current) { // Vinicio - this covers undefined and null
+			console.log(current.value);
+			current = current.next;
+		}
   }
 
   traverseRecursively(current = this.head) {
@@ -37,6 +36,27 @@ class LinkedList {
     // Vinicio - the entire recursive process needs to finish befoce
     // I execute this
     console.log(current.value);
+  }
+
+  appendRecursively(value) {
+    // Vinicio - sets everything and validates major edge cases
+    if(this.head === null) {
+      this.head = new Node(value);
+    } else {
+      this.appendRecursivelyHelper(value, this.head);
+    }
+  }
+
+  // Recursively solve the problem
+  appendRecursivelyHelper(value, current) {
+    // Base Case
+    if(current.next === null) {
+      const newTail = new Node(value);
+      current.next = newTail;
+    } else {
+      // Recursive Case
+      this.appendRecursivelyHelper(value, current.next);
+    }
   }
 }
 
