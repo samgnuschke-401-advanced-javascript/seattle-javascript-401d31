@@ -1,0 +1,25 @@
+{
+  "name": "typed-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startDB": "mkdir -p ./db && mongod --dbpath db",
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cf-supergoose": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "mongoose": "^5.6.10",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1"
+  }
+}
