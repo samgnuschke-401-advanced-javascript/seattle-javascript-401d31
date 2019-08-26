@@ -18,6 +18,7 @@ class LinkedList {
     }
   }
 
+	// O(n) time, O(1) space
   traverse() {
 		let current = this.head;
 		while(current) { // Vinicio - this covers undefined and null
@@ -26,6 +27,7 @@ class LinkedList {
 		}
   }
 
+	// O(n) Time and O(n) space
   traverseRecursively(current = this.head) {
     // Base Case
     if(current === null) {
@@ -47,6 +49,7 @@ class LinkedList {
     }
   }
 
+	//:q
   // Recursively solve the problem
   appendRecursivelyHelper(value, current) {
     // Base Case
