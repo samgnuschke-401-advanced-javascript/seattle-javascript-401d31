@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+
+    <div id="oauth"></div>
+
+  </main>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script>
+    let googleURL = "https://accounts.google.com/o/oauth2/v2/auth"; // The google Oauth url for Resource consent
+    let options = {
+      client_id: '893281997452-j2o1a9cd0bmkle5l3987p32mbac84c6p.apps.googleusercontent.com', // Our google application client id.
+      redirect_uri: 'http://localhost:3000/oauth', // The URL of our application that we want google to redirect to.  Should be an endpoint on our server
+      scope: 'email openid profile', // the user scopes we want from the Resource Owner
+      prompt: 'consent', // Let's google know we are prompting for Resource Users consent
+      response_type: 'code' // indicates that our server wants to recieve an authorization code
+    };
+    let QueryString = Object.keys(options).map(key => {
+      return `${key}=` + encodeURIComponent(options[key]);
+    }).join("&");
+    let authURL = `${googleURL}?${QueryString}`;
+    $('#oauth').append(`<a href="${authURL}">Login With Google</a>`);
+  </script>
+</body>
+
+</html>
