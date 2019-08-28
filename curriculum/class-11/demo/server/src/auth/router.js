@@ -19,6 +19,7 @@ authRouter.post('/signup', (req, res, next) => {
 });
 
 authRouter.post('/signin', auth, (req, res, next) => {
+  // Line 22: THis is the target
   res.cookie('auth', req.token);
   res.send(req.token);
 });
