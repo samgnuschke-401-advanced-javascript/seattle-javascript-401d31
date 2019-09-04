@@ -1,4 +1,4 @@
-# Readings: Cloud Server Deployments
+# Readings: Socket.io Namespaces and Rooms
 
 Below is a collection of resources of varying types and lengths which describe the topics for the upcoming lecture.  As you go through the readings each day, you'll find that certain sources work better for your reading and learning style. Focus on those, but also branch out and consume the material in different forms.
 
@@ -10,9 +10,9 @@ Wiki Entry Ideas:
 * Notes in outline form
 
 ## Read
-* [AWS Elastic Beanstalk Example](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html)
+* [Rooms and Namespaces](https://socket.io/docs/rooms-and-namespaces/){:target="_blank"}
+* [Remote Connections](https://socket.io/docs/rooms-and-namespaces/#Sending-messages-from-the-outside-world){:target="_blank"}
 
 ## Bookmark
-* [Azure Portal](https://portal.azure.com){:target="_blank"}
-* [AWS Console](https://aws.amazon.com/){:target="_blank"}
+* [Socket.io Emit Cheatsheet](https://socket.io/docs/emit-cheatsheet/){:target="_blank"}
 

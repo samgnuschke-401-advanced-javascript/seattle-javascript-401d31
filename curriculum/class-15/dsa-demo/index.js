@@ -73,6 +73,6 @@ const recursiveDepthFirst = (node) => {
   recursiveDepthFirst(node.right); // vinicio - "pushing" values into the call stack
 };
 
-recursiveDepthFirst(ten);
+// recursiveDepthFirst(ten);
 // console.log('--------------------');
-// stackDepthFirst(ten);
+stackDepthFirst(ten);
