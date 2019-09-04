@@ -46,7 +46,7 @@ Alter your API server to publish events on all CRUD Operations
 * How will you write assertions on the logger?
 
 ### Deployment
-* Deployment is not required
+* Deploy your code using ether heroku or AWS
 
 
 ### Assignemnt Submission Instructions
