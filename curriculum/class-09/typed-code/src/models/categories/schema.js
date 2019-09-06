@@ -1,9 +1,8 @@
 'use strict';
 
 const mongoose = require('mongoose');
-require('../things/schema.js');
+require('../products/schema.js');
 
-// What fields and constraints do we want?
 const categorySchema = mongoose.Schema({
   name: {
     type: String,
@@ -13,24 +12,31 @@ const categorySchema = mongoose.Schema({
     type: String,
   },
 }, {
-    toObject: { virtuals: true },
-    toJSON: { virtuals: true }
-  });
+  toObject: { virtuals: true },
+  toJSON: { virtuals: true }
+});
 
-categorySchema.virtual('tests', {
-  ref: 'Things',
+categorySchema.virtual('products', {
+  ref: 'Products',
   localField: 'name',
   foreignField: 'category',
   justOne: false,
 });
 
+const PRODUCTJOIN = `
+  SELECT product.name, category.name 
+  FROM categories
+  INNER JOIN products
+  ON name = category
+`
+
 categorySchema.pre('find', async function () {
   try {
-    this.populate('tests');
+    this.populate('products');
   }
   catch (e) {
     console.error('Find Error', e);
   }
 });
 
-module.exports = mongoose.model('categories', categorySchema);
+module.exports = mongoose.model('Categories', categorySchema);
