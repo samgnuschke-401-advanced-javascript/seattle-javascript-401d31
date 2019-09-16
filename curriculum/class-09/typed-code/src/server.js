@@ -23,8 +23,6 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Routes / Models?
-
 app.use(apiRouter);
 
 // Catchalls
