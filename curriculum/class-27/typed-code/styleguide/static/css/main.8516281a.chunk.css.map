@@ -1,0 +1,1 @@
+{"version":3,"sources":["header.scss"],"names":[],"mappings":"AAAA,WACE,qBAAsB,CADxB,cAII,wBAA4B,CAC5B,UAAY","file":"main.8516281a.chunk.css","sourcesContent":["#headerNav {\n  background-color: pink;\n  \n  li {\n    background-color: darkorchid;\n    color: white;\n  }\n}"]}
