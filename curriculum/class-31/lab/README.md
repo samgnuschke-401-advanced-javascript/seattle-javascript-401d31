@@ -50,8 +50,5 @@ Note that this component is protected by the `<Auth />` system, so make sure tha
 * Use the `useReducer()` hook to manage the To Do List items list
 * Use the `useState()` hook to manage the form
 
-### Testing
-* Tests should assert all functionality
-
 ### Assignemnt Submission Instructions
 Refer to the the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for the complete lab submission process and expectations
