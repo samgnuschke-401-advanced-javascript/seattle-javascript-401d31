@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "class-32-starter-code-practice-server",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nmq/q": "^1.0.3",
     "express": "^4.16.4",
     "socket.io": "^2.2.0"
   }
